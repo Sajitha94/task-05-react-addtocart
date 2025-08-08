@@ -3,7 +3,7 @@ import cartIcon from "../assets/addtoCart.png";
 import { ShoppingCart } from "lucide-react";
 export default function Header({ count , onCartClick }) {
   return (
-    <div className="border-b-2 border-gray-100 shadow-sm">
+    <div className="border-b-2 border-gray-100 shadow-sm sticky top-0 z-50 bg-white">
       <div className="md:mx-10 mx-2 flex justify-between items-center py-2">
         <div className="flex items-center justify-center gap-2 ">
           <img
