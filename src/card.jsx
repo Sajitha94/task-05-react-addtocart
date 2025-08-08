@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import card from "../src/assets/card.png";
 
-export default function Card() {
+export default function Card({onAddtoCard}) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -27,7 +26,7 @@ export default function Card() {
               <small className="text-gray-600 text-[16px] text-center ">
                 Price: <span>₹ {products.price}</span>
               </small>
-              <button className="border border-2 px-3 py-1 rounded-md hover:bg-gray-100">
+              <button className="border border-2 px-3 py-1 rounded-md hover:bg-gray-100" onClick={()=>onAddtoCard(products)}>
                 Add to Cart
               </button>
             </div>

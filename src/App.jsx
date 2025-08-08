@@ -5,14 +5,23 @@ import Banner from './components/banner'
 import Card from './card'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cartItems, setCartItems] = useState([]);
+   const inceaseCounr=(product)=>{
+    const alreadyExists = cartItems.find(item=>item.id === product.id)
+    if(alreadyExists){
+      alert("Item already added to the cart")
+    }else{
+      setCartItems(item=>[...item,product])
+    }
+   }
+console.log(cartItems,"cartItems");
 
   return (
     <>
       <div className=''>
-        <Header/>
+        <Header count={cartItems.length}/>
         <Banner/>
-        <Card/>
+        <Card onAddtoCard={inceaseCounr}/>
       </div>
     </>
   )
