@@ -25,7 +25,7 @@ export default function CartModel({ cartItems, onClose, onRemove }) {
                 />
                 <div className="flex-1">
                   <h6 className="text-sm font-semibold ">{item.title}</h6>
-                  <small className="text-xs text-gray-600">
+                  <small className="text-sm text-gray-600">
                     ₹ {item.price}
                   </small>
                 </div>
