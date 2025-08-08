@@ -12,7 +12,7 @@ export default function Card() {
   }, []);
 
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 gap-8 mx-10">
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-8 mx-10">
       {products.map((products,index) => (
         <div className="flex flex-col gap-5 border border-1 rounded-xl  p-3 justify-center  " key={index}>
           <div className="w-62">
