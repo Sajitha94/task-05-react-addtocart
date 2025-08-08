@@ -22,11 +22,11 @@ export default function Card({onAddtoCard}) {
               <h6 className="font-semibold truncate">{products.title}</h6>
             </div>
            
-            <div className="flex flex-col md:gap-3 gap-1 justify-between mx-2">
-              <small className="text-gray-600 text-[16px] text-center ">
+            <div className="flex flex-col md:gap-3 gap-2 justify-between mx-3">
+              <small className="text-gray-600 text-[16px] text-start ">
                 Price: <span>₹ {products.price}</span>
               </small>
-              <button className="border border-2 px-3 py-1 rounded-md hover:bg-gray-100" onClick={()=>onAddtoCard(products)}>
+              <button className="bg-[#D4AF37] text-white lg:py-4 md:py-3 py-2 w-full rounded hover:bg-yellow-600" onClick={()=>onAddtoCard(products)}>
                 Add to Cart
               </button>
             </div>

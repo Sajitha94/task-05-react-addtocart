@@ -1,9 +1,9 @@
 import logo from "../assets/Niha-Logo.png";
 import cartIcon from "../assets/addtoCart.png";
 import { ShoppingCart } from "lucide-react";
-export default function Header({ count }) {
+export default function Header({ count , onCartClick }) {
   return (
-    <div className="border-b-2 border-gray-100 ">
+    <div className="border-b-2 border-gray-100 shadow-sm">
       <div className="md:mx-10 mx-2 flex justify-between items-center py-2">
         <div className="flex items-center justify-center gap-2 ">
           <img
@@ -13,7 +13,7 @@ export default function Header({ count }) {
           />
           <h6 className="text-[#D4AF37] text-lg font-semibold">Niha Luxe</h6>
         </div>
-        <div className="relative p-2">
+        <div className="relative p-2" onClick={onCartClick}>
           <ShoppingCart
             src={cartIcon}
             alt="cart"
