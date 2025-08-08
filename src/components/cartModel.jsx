@@ -4,9 +4,12 @@ export default function CartModel({ cartItems, onClose, onRemove }) {
       <div className=" flex flex-col gap-3  justify-center  bg-white  w-96 shadow-lg p-5 rounded-lg">
         <div className="flex justify-between">
           <h5 className="text-lg font-bold mb-4">Your Cart</h5>
-          <small className="text-sm text-gray-600">
+          {cartItems.length > 0 &&(
+             <small className="text-sm text-gray-600">
             Count: {cartItems.length}
           </small>
+          )}
+         
         </div>
 
         {cartItems.length === 0 ? (
