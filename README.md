@@ -7,6 +7,8 @@ This is a React + Tailwind CSS shopping cart app for **Niha Luxe**, where users 
 - See the cart in a modal
 
 ---
+**Live Demo:** [Click Here](https://task-05-reactaddtocart.netlify.app/)
+
 
 ## 📂 Project File Explanation
 
@@ -45,4 +47,3 @@ Open your terminal and run:
 ```bash
 git clone https://github.com/Sajitha94/task-05-react-addtocart
 
-**Live Demo:** [Click Here](https://task-05-reactaddtocart.netlify.app/)
