@@ -1,4 +1,4 @@
-# 🛍 Niha Luxe Shop – React Cart App
+# 🛍 Niha Luxe Shop – React Cart App    **Live Demo:** [Click Here](https://task-05-reactaddtocart.netlify.app/)
 
 This is a React + Tailwind CSS shopping cart app for **Niha Luxe**, where users can:
 - View products from the Fake Store API
@@ -7,7 +7,7 @@ This is a React + Tailwind CSS shopping cart app for **Niha Luxe**, where users 
 - See the cart in a modal
 
 ---
-**Live Demo:** [Click Here](https://task-05-reactaddtocart.netlify.app/)
+
 
 
 ## 📂 Project File Explanation
